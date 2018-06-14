@@ -77,8 +77,9 @@ public class Main implements ActionListener {
 
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == start) {
-			 test.cls();
-			
+			panel.remove(start); 
+			test.cls();
+			 
 		}
 
 	}

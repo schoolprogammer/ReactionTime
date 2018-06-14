@@ -23,16 +23,17 @@ public class Test implements ActionListener {
 		click.addActionListener(this);
 		test.add(click);
 		click.setSize(300,150);
-		test.setBackground(Color.red);
 	}
 
 	// clears screen
 	public void cls() {
 
 		// removes title screen, adds new panel and makes sure everything works
-		// main.frame.remove(main.panel);
-		main.frame.add(test);
-
+		 main.frame.remove(main.panel);
+		 main.frame.add(test);
+		 main.frame.revalidate();
+		
+			
 	}
 
 	public void test() {
